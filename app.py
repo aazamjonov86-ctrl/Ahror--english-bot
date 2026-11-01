@@ -73,7 +73,7 @@ def webhook():
         send_telegram_message(chat_id, answer)
 
     except Exception as e:
-        print(f"Error: {e}")
+        print(f"Error: {e}", flush=True)
         send_telegram_message(
             chat_id,
             "Хатолик юз берди. Бироздан кейин яна уриниб кўринг."
